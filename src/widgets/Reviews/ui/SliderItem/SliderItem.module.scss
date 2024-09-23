@@ -1,0 +1,32 @@
+.root {
+  cursor: pointer;
+  max-width: 340px;
+  height: 100%;
+  max-height: 316px;
+  
+  @media (max-width: $tablet) {
+    max-width: unset;
+    height: unset;
+    max-height: unset;
+  }
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}

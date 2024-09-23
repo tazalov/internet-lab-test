@@ -1,0 +1,46 @@
+.label {
+  cursor: pointer;
+  user-select: none;
+
+  z-index: 0;
+  
+  display: flex;
+  gap: 11px;
+  align-items: center;
+
+  width: 100%;
+
+
+  &.disabled {
+    cursor: initial;
+  }
+}
+
+.checkbox {
+  cursor: pointer;
+
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  padding: 3px 1px;
+
+  background-color: transparent;
+  border: 2px solid var(--gray);
+  border-radius: 4px;
+
+  &[data-state='checked'] {
+    background-color: var(--primary-color);
+  }
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

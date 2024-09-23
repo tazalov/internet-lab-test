@@ -1,0 +1,96 @@
+.menuContainer {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.trigger {
+  all: unset;
+
+  cursor: pointer;
+
+  position: relative;
+  z-index: 10;
+
+  width: 22px;
+  height: 14px;
+  
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 22px;
+    height: 2px;
+
+    background-color: var(--light-100);
+
+    transition: all 0.3s ease-in-out;
+  }
+  
+  &::before {
+    content: '';
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    width: 22px;
+    height: 2px;
+    
+    background-color: var(--light-100);
+
+    transition: all 0.3s ease-in-out;
+  }
+  
+  &.open {
+    height: 22px;
+
+    &::after {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      background-color: var(--dark-500);
+    }
+
+    &::before {
+      bottom: 40%;
+      transform: translateY(-50%) rotate(-45deg) ;
+      background-color: var(--dark-500);
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: -110%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100dvw;
+  height: 100dvh;
+padding: 28px 16px;
+  
+  background-color: var(--light-100);
+  
+  transition: left 0.3s ease-in-out;
+
+  &.open {
+    left: 0;
+
+  }
+}
+
+.logo {
+  width: 100%;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--light-500);
+}

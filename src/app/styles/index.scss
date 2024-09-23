@@ -1,0 +1,17 @@
+@import './variables';
+@import './boilerplate';
+@import './fonts';
+
+.main-container {
+  width: 100%;
+  max-width: 1216px;
+  margin: 0 auto;
+  
+  @media (max-width: $desktop) {
+    padding: 0 20px;
+  }
+  
+  @media (max-width: $tablet) {
+    padding: 0 16px;
+  }
+}

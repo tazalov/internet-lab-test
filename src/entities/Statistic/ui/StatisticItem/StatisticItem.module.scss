@@ -1,0 +1,9 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  
+  @media (max-width: $tablet) {
+    gap: 46px;
+  }
+}

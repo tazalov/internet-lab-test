@@ -1,0 +1,19 @@
+.link {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 16px 0;
+
+  color: var(--dark-100);
+
+  border-bottom: 1px solid var(--light-500);
+}

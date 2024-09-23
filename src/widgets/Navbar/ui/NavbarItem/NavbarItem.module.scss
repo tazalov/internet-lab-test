@@ -1,0 +1,9 @@
+.root {
+  color: var(--light-100);
+  transition: text-decoration 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

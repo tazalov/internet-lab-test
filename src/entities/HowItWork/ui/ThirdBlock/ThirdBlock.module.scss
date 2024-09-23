@@ -1,0 +1,50 @@
+.thirdBlock {
+  display: flex;
+  gap:32px;
+  align-items: center;
+  justify-content: center;
+  
+  @media (max-width: $tablet) {
+    flex-direction: column-reverse;
+  }
+}
+
+.title {
+  margin-bottom: 18px;
+  
+  @media (max-width: $desktop) {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  @media (max-width: $tablet) {
+    text-align: center;
+  }
+}
+
+.text1 {
+  margin-bottom: 28px;
+  
+  @media (max-width: $desktop) {
+    margin-bottom: 20px;
+  }
+}
+
+.text1, .text2{
+  color: var(--dark-300);
+  
+  @media (max-width: $tablet) {
+    text-align: center;
+  }
+}
+
+.image {
+  width: 100%;
+  max-width: 592px;
+  height: auto;
+  
+  @media (max-width: $desktop) {
+    max-width: 351px;
+  }
+}
