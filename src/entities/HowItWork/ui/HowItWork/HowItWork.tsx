@@ -6,7 +6,7 @@ import s from './HowItWork.module.scss'
 
 export const HowItWork = () => {
   return (
-    <div className={s.howItWork}>
+    <section className={s.howItWork}>
       <div className='main-container'>
         <Typography variant='headline2' asComponent='h2' bold className={s.title} id='how-it-work'>
           Как это работает
@@ -14,6 +14,6 @@ export const HowItWork = () => {
         <StepsList />
         <ThirdBlock />
       </div>
-    </div>
+    </section>
   )
 }

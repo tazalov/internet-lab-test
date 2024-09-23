@@ -5,7 +5,7 @@ import s from './MainBlock.module.scss'
 
 export const MainBlock = () => {
   return (
-    <div className={s.main}>
+    <section className={s.main}>
       <div className={s.content}>
         <Typography variant='headline1' asComponent='h1' className={s.title}>
           Говорят, никогда не поздно сменить профессию
@@ -15,6 +15,6 @@ export const MainBlock = () => {
         </Typography>
         <Button variant='secondary'>Проще простого!</Button>
       </div>
-    </div>
+    </section>
   )
 }

@@ -11,10 +11,8 @@ type Props = {
 
 export const NavbarItem = ({ children, anchor }: Props) => {
   return (
-    <Link to={anchor} smooth>
-      <Typography variant='body16' asComponent='li' className={s.root}>
-        {children}
-      </Typography>
-    </Link>
+    <Typography variant='body16' asComponent={Link} to={anchor} smooth className={s.root}>
+      {children}
+    </Typography>
   )
 }

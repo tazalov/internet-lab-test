@@ -10,7 +10,7 @@ export const MainLayout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <Navbar items={routes} />
-      {children}
+      <main>{children}</main>
       <footer className={s.footer}>
         <Typography variant='body18' className={s.copy}>
           © 2021 Лаборатория интернет

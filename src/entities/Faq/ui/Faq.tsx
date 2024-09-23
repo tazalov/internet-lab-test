@@ -6,7 +6,7 @@ import s from './Faq.module.scss'
 
 export const Faq = () => {
   return (
-    <div className={s.faq} id='faq'>
+    <section className={s.faq} id='faq'>
       <div className='main-container'>
         <Typography variant='headline2' className={s.title}>
           Вопросы и ответы
@@ -20,6 +20,6 @@ export const Faq = () => {
           ))}
         </Accordion.Root>
       </div>
-    </div>
+    </section>
   )
 }

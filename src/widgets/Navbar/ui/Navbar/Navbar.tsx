@@ -17,20 +17,20 @@ type Props = {
 
 export const Navbar = ({ items }: Props) => {
   return (
-    <div className={clsx(s.root)}>
+    <header className={clsx(s.root)}>
       <div className='main-container'>
         <div className={s.wrapper}>
           <Logo />
-          <ul className={s.list}>
+          <nav className={s.list}>
             {items.map((item, i) => (
               <NavbarItem key={i} anchor={item.anchor}>
                 {item.label}
               </NavbarItem>
             ))}
-          </ul>
+          </nav>
           <MobileMenu />
         </div>
       </div>
-    </div>
+    </header>
   )
 }

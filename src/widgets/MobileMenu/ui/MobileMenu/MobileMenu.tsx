@@ -25,7 +25,7 @@ export const MobileMenu = () => {
   return (
     <div className={s.menuContainer}>
       <button onClick={handleToggleOpen} className={clsx(s.trigger, { [s.open]: open })} />
-      <div className={clsx(s.menu, { [s.open]: open })}>
+      <nav className={clsx(s.menu, { [s.open]: open })}>
         <div className={s.logo}>
           <Logo />
         </div>
@@ -34,7 +34,7 @@ export const MobileMenu = () => {
             {el.label}
           </MobileMenuItem>
         ))}
-      </div>
+      </nav>
     </div>
   )
 }

@@ -13,11 +13,16 @@ type Props = {
 
 export const MobileMenuItem = ({ children, anchor, onClose }: Props) => {
   return (
-    <Link to={anchor} smooth className={s.link}>
-      <Typography variant='body18' className={s.item} onClick={onClose}>
-        {children}
-        <ArrowIcon width={8} />
-      </Typography>
-    </Link>
+    <Typography
+      asComponent={Link}
+      variant='body18'
+      className={s.item}
+      onClick={onClose}
+      to={anchor}
+      smooth
+    >
+      {children}
+      <ArrowIcon width={8} />
+    </Typography>
   )
 }

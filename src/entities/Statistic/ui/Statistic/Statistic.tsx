@@ -4,7 +4,7 @@ import s from './Statistic.module.scss'
 
 export const Statistic = () => {
   return (
-    <div className={s.statistic}>
+    <section className={s.statistic}>
       <div className='main-container'>
         <div className={s.content}>
           {STATISTIC_ITEMS.map((el, i) => (
@@ -12,6 +12,6 @@ export const Statistic = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
